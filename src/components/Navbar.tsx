@@ -45,7 +45,7 @@ export const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-10 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? "glass-strong py-3" : "py-5"
       }`}
     >
@@ -55,7 +55,7 @@ export const Navbar = () => {
           href="#home"
           className="text-xl font-bold text-foreground hover:text-primary transition-colors"
         >
-          MS
+          IA
         </a>
 
         {/* Navigation */}
