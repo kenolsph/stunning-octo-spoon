@@ -1,3 +1,4 @@
+import { Ticker } from "@/components/Ticker";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Projects } from "@/components/Projects";
@@ -9,7 +10,8 @@ import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pt-10">
+      <Ticker />
       <Navbar />
       <main>
         <Hero />
