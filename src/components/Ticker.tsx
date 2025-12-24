@@ -1,5 +1,5 @@
 export const Ticker = () => {
-  const tickerText = "ISAAC ADEBISI";
+  const tickerText = "ISAAC.DEV";
   const repeats = 12;
 
   return (

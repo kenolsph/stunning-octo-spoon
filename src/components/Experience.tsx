@@ -1,14 +1,14 @@
 const experiences = [
   {
-    title: "Full Stack Developer",
+    title: "Front End Developer",
     period: "2025 - Present",
     company: "Personal Work",
     description:
       "Building web applications, experimenting with new technologies, and shipping side projects.",
   },
   {
-    title: "CS Student",
-    period: "2024 - Present",
+    title: "SWE Student",
+    period: "2021 - 2025",
     company: "University",
     description:
       "Pursuing Computer Science, diving deep into algorithms, system design, and software engineering fundamentals.",
@@ -21,7 +21,7 @@ export const Experience = () => {
       <div className="container max-w-4xl">
         {/* Section Header */}
         <div className="mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3">Background</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">Experience</h2>
           <p className="text-muted-foreground text-lg">Where I'm at right now.</p>
         </div>
 

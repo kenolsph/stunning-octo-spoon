@@ -3,17 +3,16 @@ import { ArrowRight, FileText, Github, Linkedin, Twitter, Instagram, Mail } from
 
 const techBadges = [
   { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+  { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
   { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-  { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", invert: true },
   { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
 ];
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com/MonisMS", label: "GitHub" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/syed-monis-sarwar-sms47/", label: "LinkedIn" },
-  { icon: Twitter, href: "https://x.com/SMSarwar47", label: "Twitter" },
-  { icon: Instagram, href: "https://www.instagram.com/monis_sarwar/", label: "Instagram" },
-  { icon: Mail, href: "mailto:monissms16@gmail.com", label: "Email" },
+ { icon: Mail, href: "mailto:feluopi@gmail.com", label: "Email" },
+  { icon: Github, href: "https://github.com/kenolsph", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/isaac-adebisi/", label: "LinkedIn" },
+  { icon: Instagram, href: "https://www.instagram.com/ii.tolu", label: "Instagram" },
 ];
 
 export const Hero = () => {
@@ -22,20 +21,24 @@ export const Hero = () => {
       id="home"
       className="min-h-screen flex flex-col items-center justify-center pt-20 pb-16 px-4"
     >
-      <div className="container max-w-4xl text-center">
+       <div className="container max-w-4xl text-center">
         {/* Profile Image */}
         <div className="relative inline-block mb-6 animate-fade-in">
           <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-secondary shadow-card">
             <img
-              src="https://www.m0nis.com/_next/image?url=%2Fprofile-pic-1.jpeg&w=384&q=75"
+              src="/me.jpg"
               alt="Monis profile"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-top"
             />
           </div>
-          {/* Available indicator */}
-          <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary border border-border text-xs">
-            <span className="w-2 h-2 rounded-full bg-available animate-pulse" />
-            <span className="text-muted-foreground">Available for opportunities</span>
+          {/* Available indicator on border */}
+          <div className="group absolute bottom-[12%] right-[12%] cursor-pointer">
+            <span className="block w-4 h-4 rounded-full bg-available border-2 border-background animate-pulse shadow-lg" />
+            <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
+              <div className="px-3 py-1.5 rounded-full bg-secondary border border-border text-xs whitespace-nowrap">
+                <span className="text-muted-foreground">Available for opportunities</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -44,7 +47,8 @@ export const Hero = () => {
           className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-slide-up"
           style={{ animationDelay: "0.1s" }}
         >
-          Hi, I'm <span className="text-gradient">Monis</span>—a full-stack web developer.
+          Hi, I'm <span className="text-gradient">Isaac</span> a Software
+          Engineer.
         </h1>
 
         {/* Description */}
@@ -63,13 +67,15 @@ export const Hero = () => {
                 />
                 {tech.name}
               </span>
-              {index < techBadges.length - 1 && (index === techBadges.length - 2 ? ", and " : ", ")}
+              {index < techBadges.length - 1 &&
+                (index === techBadges.length - 2 ? ", and " : ", ")}
             </span>
           ))}
-          , with a strong focus on <strong className="text-foreground">backend architecture</strong> and{" "}
-          <strong className="text-foreground">database design</strong>. I care about{" "}
-          <strong className="text-foreground">system performance</strong> and building software that
-          actually holds up in production.
+          , with a strong focus on{" "}
+          <strong className="text-foreground">frontend architecture</strong> and{" "}
+          <strong className="text-foreground">database design</strong>. I care
+          about <strong className="text-foreground">system performance</strong>{" "}
+          and building software that actually holds up in production.
         </p>
 
         {/* CTAs */}
@@ -78,13 +84,18 @@ export const Hero = () => {
           style={{ animationDelay: "0.3s" }}
         >
           <Button variant="hero" size="lg" asChild>
-            <a href="https://cal.com/monis-sarwar-vvbnfn" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://cal.com/isaac-adebisi-vrytfb"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Book a call
               <ArrowRight className="w-4 h-4" />
             </a>
+            
           </Button>
           <Button variant="hero-outline" size="lg" asChild>
-            <a href="#contact">
+            <a href="/resume.pdf" download>
               <FileText className="w-4 h-4" />
               Resume
             </a>

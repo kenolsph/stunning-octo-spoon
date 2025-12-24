@@ -10,7 +10,11 @@ const navItems = [
   { label: "Blog", href: "#blog" },
 ];
 
-export const Navbar = () => {
+interface NavbarProps {
+  onCommandOpen?: () => void;
+}
+
+export const Navbar = ({ onCommandOpen }: NavbarProps) => {
   const [activeSection, setActiveSection] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
@@ -84,10 +88,13 @@ export const Navbar = () => {
         </nav>
 
         {/* Keyboard shortcut hint */}
-        <div className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-border text-muted-foreground text-sm">
+        <button 
+          onClick={onCommandOpen}
+          className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-border text-muted-foreground text-sm hover:bg-secondary/50 hover:text-foreground transition-colors cursor-pointer"
+        >
           <Command className="w-3.5 h-3.5" />
           <span>Ctrl K</span>
-        </div>
+        </button>
 
         {/* Mobile menu button */}
         <Button variant="ghost" size="icon" className="md:hidden">

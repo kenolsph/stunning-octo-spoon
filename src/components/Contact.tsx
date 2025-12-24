@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Calendar, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Calendar, Github, Linkedin, Instagram } from "lucide-react";
 
 const socialLinks = [
-  { icon: Mail, href: "mailto:monissms16@gmail.com", label: "Email" },
-  { icon: Github, href: "https://github.com/MonisMS", label: "GitHub" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/syed-monis-sarwar-sms47/", label: "LinkedIn" },
-  { icon: Twitter, href: "https://x.com/SMSarwar47", label: "Twitter" },
+  { icon: Mail, href: "mailto:feluopi@gmail.com", label: "Email" },
+  { icon: Github, href: "https://github.com/kenolsph", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/isaac-adebisi/", label: "LinkedIn" },
+  { icon: Instagram, href: "https://www.instagram.com/ii.tolu", label: "Instagram" },
 ];
 
 export const Contact = () => {
@@ -23,13 +23,13 @@ export const Contact = () => {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
           <Button variant="hero-outline" size="lg" asChild>
-            <a href="mailto:monissms16@gmail.com">
+            <a href="mailto:feluopi@gmail.com">
               <Mail className="w-4 h-4" />
-              monissms16@gmail.com
+              feluopi@gmail.com
             </a>
           </Button>
           <Button variant="hero" size="lg" asChild>
-            <a href="https://cal.com/monis-sarwar-vvbnfn" target="_blank" rel="noopener noreferrer">
+            <a href="https://cal.com/isaac-adebisi-vrytfb" target="_blank" rel="noopener noreferrer">
               <Calendar className="w-4 h-4" />
               Book a call
             </a>
