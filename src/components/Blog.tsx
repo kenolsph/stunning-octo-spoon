@@ -23,7 +23,7 @@ const blogPosts = [
 
 export const Blog = () => {
   return (
-    <section id="blog" className="py-24 px-4 bg-gradient-dark">
+    <section id="blog" className="py-24 px-4 bg-dark">
       <div className="container max-w-4xl">
         {/* Section Header */}
         <div className="mb-12">

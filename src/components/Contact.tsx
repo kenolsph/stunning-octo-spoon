@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Mail, Calendar, Github, Linkedin, Instagram } from "lucide-react";
 
 const socialLinks = [
-  { icon: Mail, href: "mailto:feluopi@gmail.com", label: "Email" },
+  { icon: Mail, href: "feluopi@gmail.com", label: "Email" },
   { icon: Github, href: "https://github.com/kenolsph", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/isaac-adebisi/", label: "LinkedIn" },
   { icon: Instagram, href: "https://www.instagram.com/ii.tolu", label: "Instagram" },
@@ -23,7 +23,7 @@ export const Contact = () => {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
           <Button variant="hero-outline" size="lg" asChild>
-            <a href="mailto:feluopi@gmail.com">
+            <a href="feluopi@gmail.com">
               <Mail className="w-4 h-4" />
               feluopi@gmail.com
             </a>

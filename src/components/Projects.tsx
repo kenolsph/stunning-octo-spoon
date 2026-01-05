@@ -13,11 +13,11 @@ const projects = [
     gradient: "from-red-500/20 via-orange-500/20 to-yellow-500/20",
   },
   {
-    title: "FolderMage",
+    title: "Illuvium",
     description:
-      "A desktop app that transforms your messy Downloads and cluttered folders into organized bliss. Features smart auto-sorting, undo functionality, background job queues, and a clean dashboard.",
-    image: "https://www.m0nis.com/_next/image?url=%2Ffolder-mage.png&w=640&q=75",
-    githubUrl: "https://github.com/MonisMS/folder-organizer",
+      "A blockchain-based open-world RPG / auto-battler game built on Ethereum, designed to look and feel like a AAA game, not a typical crypto game..",
+    image: "/game.jpeg",
+    githubUrl: "https://github.com/kenolsph/web-GAME",
     status: "in-development",
     gradient: "from-slate-500/20 via-gray-500/20 to-zinc-500/20",
   },
@@ -35,7 +35,7 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <section id="projects" className="py-24 px-4">
+    <section id="projects" className="py-24 px-4 bg-dark">
       <div className="container max-w-6xl">
         {/* Section Header */}
         <div className="mb-12">

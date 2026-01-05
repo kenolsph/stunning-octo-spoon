@@ -4,8 +4,8 @@ import { ArrowRight, FileText, Github, Linkedin, Twitter, Instagram, Mail } from
 const techBadges = [
   { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
   { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-  { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-  { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+  { name: "Tailwind", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
+  { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
 ];
 
 const socialLinks = [
@@ -17,17 +17,14 @@ const socialLinks = [
 
 export const Hero = () => {
   return (
-    <section
-      id="home"
-      className="min-h-screen flex flex-col items-center justify-center pt-20 pb-16 px-4"
-    >
-       <div className="container max-w-4xl text-center">
+    <section id="home" className="min-h-screen flex flex-col bg-dark items-center justify-center pt-20 pb-16 px-4">
+       <div className="container max-w-4xl text-center ">
         {/* Profile Image */}
         <div className="relative inline-block mb-6 animate-fade-in">
           <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-secondary shadow-card">
             <img
               src="/me.jpg"
-              alt="Monis profile"
+              alt="isaac profile"
               className="w-full h-full object-cover object-top"
             />
           </div>
@@ -47,7 +44,7 @@ export const Hero = () => {
           className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-slide-up"
           style={{ animationDelay: "0.1s" }}
         >
-          Hi, I'm <span className="text-gradient">Isaac</span> a Software
+          Hi, I'm <a className="text-primary hover:underline " href="https://www.linkedin.com/in/isaac-adebisi/">Isaac</a> a Software
           Engineer.
         </h1>
 
@@ -63,7 +60,7 @@ export const Hero = () => {
                 <img
                   src={tech.icon}
                   alt={tech.name}
-                  className={`w-4 h-4 ${tech.invert ? "invert" : ""}`}
+                  className={`w-4 h-4 ${tech.invert ?  "invert" : "b"}`}
                 />
                 {tech.name}
               </span>
@@ -95,8 +92,8 @@ export const Hero = () => {
             
           </Button>
           <Button variant="hero-outline" size="lg" asChild>
-            <a href="/resume.pdf" download>
-              <FileText className="w-4 h-4" />
+            <a className="" href="/resume.pdf" download>
+              <FileText className="w-4 h-4 h" />
               Resume
             </a>
           </Button>
@@ -113,10 +110,10 @@ export const Hero = () => {
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-lg text-muted-foreground hover:text-foreground hover:bg-secondary transition-all duration-300"
+              className="p-2.5 rounded-lg text-muted-foreground hover:text-foreground hover:bg-primary transition-all duration-300"
               aria-label={social.label}
             >
-              <social.icon className="w-5 h-5" />
+              <social.icon className="w-5 h-5 " />
             </a>
           ))}
         </div>
@@ -124,3 +121,5 @@ export const Hero = () => {
     </section>
   );
 };
+
+
