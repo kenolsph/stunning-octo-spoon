@@ -1,9 +1,9 @@
 export const Ticker = () => {
-  const tickerText = "ISAAC.DEV";
+  const tickerText = "Isaac.Dev";
   const repeats = 12;
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-[60] bg-secondary/80 backdrop-blur-sm border-b border-border overflow-hidden py-2">
+    <div className="bg-secondary/80 backdrop-blur-sm border-t border-border overflow-hidden py-2">
       <div className="animate-marquee whitespace-nowrap flex">
         {Array.from({ length: repeats }).map((_, i) => (
           <span key={i} className="mx-8 text-sm font-bold tracking-widest text-muted-foreground">

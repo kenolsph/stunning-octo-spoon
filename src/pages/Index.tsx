@@ -14,8 +14,7 @@ const Index = () => {
   const [commandOpen, setCommandOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-background pt-10">
-      <Ticker />
+    <div className="min-h-screen bg-background">
       <Navbar onCommandOpen={() => setCommandOpen(true)} />
       <CommandPalette open={commandOpen} onOpenChange={setCommandOpen} />
       <main>
@@ -27,6 +26,7 @@ const Index = () => {
         <Contact />
       </main>
       <Footer />
+      <Ticker />
     </div>
   );
 };

@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "AskAI",
+    title: "NearbyNow",
     description:
-      "Your personal AI assistant that answers questions, processes meetings, and summarizes content in real-time. Upload recordings or documents, and let AI extract key insights and action items for you.",
-    image: "https://www.m0nis.com/_next/image?url=%2Fask-ai.png&w=640&q=75",
+      "NearbyNow is a smart location-based platform that connects users to nearby places that match their preferences",
+    image: "/mod.jpg",
     liveUrl: "https://askai-nu.vercel.app/",
     githubUrl: "https://github.com/MonisMS/askai",
     status: "operational",
@@ -132,7 +132,7 @@ export const Projects = () => {
 
           {/* More Projects Card */}
           <a
-            href="https://github.com/MonisMS"
+            href="https://github.com/kenolsph"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex flex-col items-center justify-center min-h-[280px] rounded-2xl border border-dashed border-border hover:border-muted-foreground/50 bg-card/50 transition-all duration-300"

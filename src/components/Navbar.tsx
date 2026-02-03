@@ -1,6 +1,12 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Command } from "lucide-react";
+import { Command, Menu, X } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose,
+} from "@/components/ui/sheet";
 
 const navItems = [
   { label: "Home", href: "#home" },
@@ -17,6 +23,7 @@ interface NavbarProps {
 export const Navbar = ({ onCommandOpen }: NavbarProps) => {
   const [activeSection, setActiveSection] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,11 +52,12 @@ export const Navbar = ({ onCommandOpen }: NavbarProps) => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+    setMobileOpen(false);
   };
 
   return (
     <header
-      className={`fixed top-10 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? "glass-strong py-3" : "py-5"
       }`}
     >
@@ -96,24 +104,38 @@ export const Navbar = ({ onCommandOpen }: NavbarProps) => {
           <span>Ctrl K</span>
         </button>
 
-        {/* Mobile menu button */}
-        <Button variant="ghost" size="icon" className="md:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <line x1="4" x2="20" y1="12" y2="12" />
-            <line x1="4" x2="20" y1="6" y2="6" />
-            <line x1="4" x2="20" y1="18" y2="18" />
-          </svg>
-        </Button>
+        {/* Mobile menu */}
+        <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
+          <SheetTrigger asChild>
+            <Button variant="ghost" size="icon" className="md:hidden">
+              <Menu className="w-6 h-6" />
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="right" className="w-[280px] bg-background border-border">
+            <nav className="flex flex-col gap-4 mt-8">
+              {navItems.map((item) => (
+                <button
+                  key={item.label}
+                  onClick={() => handleNavClick(item.href)}
+                  className={`px-4 py-3 rounded-lg text-left text-base font-medium transition-all duration-300 ${
+                    activeSection === item.href.substring(1)
+                      ? "bg-secondary text-foreground"
+                      : "text-muted-foreground hover:text-foreground hover:bg-secondary/50"
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ))}
+              <Button
+                variant="hero"
+                className="mt-4"
+                onClick={() => handleNavClick("#contact")}
+              >
+                Let's Talk
+              </Button>
+            </nav>
+          </SheetContent>
+        </Sheet>
       </div>
     </header>
   );

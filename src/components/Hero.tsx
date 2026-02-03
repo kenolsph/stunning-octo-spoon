@@ -17,15 +17,15 @@ const socialLinks = [
 
 export const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex flex-col bg-dark items-center justify-center pt-20 pb-16 px-4">
-       <div className="container max-w-4xl text-center ">
+    <section id="home" className="min-h-screen flex flex-col items-center justify-center pt-20 pb-16 px-4">
+       <div className="container max-w-4xl text-center --gradient-dark">
         {/* Profile Image */}
         <div className="relative inline-block mb-6 animate-fade-in">
           <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-secondary shadow-card">
             <img
-              src="/me.jpg"
+              src="/myself.jpeg"
               alt="isaac profile"
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover"
             />
           </div>
           {/* Available indicator on border */}

@@ -1,10 +1,17 @@
 const experiences = [
   {
+    title: "Lead Software Engineer",
+    period: "Jan - Present, 2026 ",
+    company: "Ogun, Nigeria",
+    description:
+      "Leading a team of developers to design and implement scalable software solutions, ensuring code quality and best practices are followed.",
+  },
+  {
     title: "Pisciner 42 Berlin",
     period: "Aug - Sep 2025",
     company: "Berlin, Germany",
     description:
-      "Pursuing Software Engineering, diving deep into algorithms, system design, and software engineering fundamentals.",
+      "An intensive 4-week coding bootcamp focused on C programming, algorithmic thinking, and problem-solving skills.",
   },
   {
     title: "SWE Student",
@@ -50,10 +57,10 @@ export const Experience = () => {
               <div className="absolute left-0 top-0 w-3 h-3 -translate-x-1.5 rounded-full bg-primary" />
 
               {/* Content */}
-              <div className="bg-card rounded-xl p-6 border border-border hover:border-primary border-muted-foreground/50 transition-all duration-300 shadow-card">
+              <div className="bg-card rounded-xl p-6 border hover:border-primary border-muted-foreground/50 transition-all duration-300 shadow-card">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
                   <h3 className="text-lg font-semibold">{exp.title}</h3>
-                  <span className=" text-primary text-sm text-muted-foreground">{exp.period}</span>
+                  <span className="text-sm text-muted-foreground">{exp.period}</span>
                 </div>
                 <p className="text-sm text-primary mb-2">{exp.company}</p>
                 <p className="text-muted-foreground text-sm">{exp.description}</p>
