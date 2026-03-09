@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "NearbyNow",
+    title: "covid 19",
     description:
-      "NearbyNow is a smart location-based platform that connects users to nearby places that match their preferences",
-    image: "/mod.jpg",
-    liveUrl: "https://askai-nu.vercel.app/",
-    githubUrl: "https://github.com/MonisMS/askai",
+      "A simple web application that displays COVID-19 incident data, including cases, recoveries, and deaths, using live or static data sources.",
+    image: "/covid.png",
+    liveUrl: "http://secmsg.me/covid-rep/",
+    githubUrl: "https://github.com/kenolsph/covid-rep",
     status: "operational",
     gradient: "from-red-500/20 via-orange-500/20 to-yellow-500/20",
   },
@@ -22,12 +22,12 @@ const projects = [
     gradient: "from-slate-500/20 via-gray-500/20 to-zinc-500/20",
   },
   {
-    title: "Beats Generator",
+    title: "Secure Channels",
     description:
-      "An AI-powered music generator that creates unique tunes using the Gemini API. Just describe the vibe you want, and it generates beats for you. Features a vinyl-inspired UI with full playback controls.",
-    image: "https://www.m0nis.com/_next/image?url=%2Ftunes-generator-image%20(2).png&w=640&q=75",
-    liveUrl: "https://tunes-generator.vercel.app/",
-    githubUrl: "https://github.com/MonisMS/Tunes-generator-",
+      "A secure communication platform that uses end-to-end encryption to ensure that messages are private and protected from unauthorized access.",
+    image: "/secur.png",
+    liveUrl: "",
+    githubUrl: "",
     status: "operational",
     gradient: "from-purple-500/20 via-pink-500/20 to-rose-500/20",
   },
