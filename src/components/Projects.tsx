@@ -7,7 +7,7 @@ const projects = [
     description:
       "A simple web application that displays COVID-19 incident data, including cases, recoveries, and deaths, using live or static data sources.",
     image: "/covid.png",
-    liveUrl: "http://secmsg.me/covid-rep/",
+    liveUrl: "http://secmsg.me/covid-rep/",   
     githubUrl: "https://github.com/kenolsph/covid-rep",
     status: "operational",
     gradient: "from-red-500/20 via-orange-500/20 to-yellow-500/20",
@@ -17,6 +17,7 @@ const projects = [
     description:
       "A blockchain-based open-world RPG / auto-battler game built on Ethereum, designed to look and feel like a AAA game, not a typical crypto game..",
     image: "/game.jpeg",
+    liveUrl: "https://web-game-h2rc.onrender.com/",
     githubUrl: "https://github.com/kenolsph/web-GAME",
     status: "in-development",
     gradient: "from-slate-500/20 via-gray-500/20 to-zinc-500/20",
