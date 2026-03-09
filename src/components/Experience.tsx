@@ -1,7 +1,7 @@
 const experiences = [
   {
     title: "Lead Software Engineer",
-    period: "Jan - Present, 2026 ",
+    period: "Jan - Mar, 2026 ",
     company: "Ogun, Nigeria",
     description:
       "Leading a team of developers to design and implement scalable software solutions, ensuring code quality and best practices are followed.",

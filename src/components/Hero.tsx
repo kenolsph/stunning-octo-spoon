@@ -61,7 +61,7 @@ export const Hero = () => {
                   src={tech.icon}
                   alt={tech.name}
                   className={`w-4 h-4 ${tech.invert ?  "invert" : "b"}`}
-                />
+                /> 
                 {tech.name}
               </span>
               {index < techBadges.length - 1 &&
@@ -92,7 +92,7 @@ export const Hero = () => {
             
           </Button>
           <Button variant="hero-outline" size="lg" asChild>
-            <a className="" href="/resume.pdf" download>
+            <a className="" href="/isaac resume.pdf" download>
               <FileText className="w-4 h-4 h" />
               Resume
             </a>
