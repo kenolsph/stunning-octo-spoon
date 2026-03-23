@@ -19,7 +19,7 @@ const projects = [
     image: "/game.jpeg",
     liveUrl: "https://web-game-h2rc.onrender.com/",
     githubUrl: "https://github.com/kenolsph/web-GAME",
-    status: "in-development",
+    status: "operational",
     gradient: "from-slate-500/20 via-gray-500/20 to-zinc-500/20",
   },
   {
@@ -38,7 +38,7 @@ const projects = [
     image: "/secur.png",
     liveUrl: "",
     githubUrl: "",
-    status: "operational",
+    status: "in-development",
     gradient: "from-purple-500/20 via-pink-500/20 to-rose-500/20",
   },
 ];
