@@ -23,6 +23,15 @@ const projects = [
     gradient: "from-slate-500/20 via-gray-500/20 to-zinc-500/20",
   },
   {
+    title: "Nysc Management System",
+    description:
+      "A portal for managing NYSC (National Youth Service Corps) activities, including CDS, clearance and communication for corps members and administrators.",
+    image: "/nysc.png",
+    liveUrl: "https://nysc-attendance.lovable.app",
+    status: "operational",
+    gradient: "from-slate-500/20 via-gray-500/20 to-zinc-500/20",
+  },
+  {
     title: "Secure Channels",
     description:
       "A secure communication platform that uses end-to-end encryption to ensure that messages are private and protected from unauthorized access.",
